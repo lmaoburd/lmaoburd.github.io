@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/sidebar.css" />    <!-- Do not remove -->
+    <link rel="stylesheet" href="css/Gallery.css" />
+    <link rel="stylesheet" href="css/slideshow.css" />
+
+</head>
+<body>
+
+    <div class="header">
+        <!-- DO NOT REMOVE -->
+        <div class="sidenav">
+            <i class="fa-solid fa-house"></i><a href="index.html"></i>Homepage</a>
+            <i class="fa-solid fa-timeline"></i><a href="timeline.html">Timeline</a>
+            <i class="fa-solid fa-images"></i><a href="Gallery.html">Gallery</a>
+        </div>
+
+        <div class="headerTitle" style="margin:1%">
+            <h2>Tribute Website</h2> <!-- Title header -->
+        </div>
+        <div class="sidebarNav">
+        </div>
+
+    </div>
+
+    <div class="headers">
+        <h1>Gallery of Toriyama and his works</h1>
+        <p>Active: 1978-2023</p>
+    </div>
+
+    <div class="GalleryCon">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 9</div>
+                <img src="assets/slideshow/AkiraToriyamaMangaTheater1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 9</div>
+                <img src="assets/slideshow/AkiraToriyamaMangaTheater3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 9</div>
+                <img src="assets/slideshow/Cowa_cover.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 9</div>
+                <img src="assets/slideshow/DB_Tankōbon.png" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 9</div>
+                <img src="assets/slideshow/DrSlump1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 9</div>
+                <img src="assets/slideshow/JacotheGalacticPatrolman.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 9</div>
+                <img src="assets/slideshow/Kajika_cover.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 9</div>
+                <img src="assets/slideshow/Pink_Manga_Cover.PNG" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">9 / 9</div>
+                <img src="assets/slideshow/Sand_Land_Japanese_volume_1.JPG" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+        </div>
+    </div>
+
+    <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+
+    <!-- Photo Grid -->
+    <div class="GalleryCon">
+        <div class="row">
+            <div class="column">
+                <img src="assets/Gallery/a1.png" style="width:100%">
+                <img src="assets/Gallery/a2.png" style="width:100%">
+                <img src="assets/Gallery/a3.png" style="width:100%">
+                <img src="assets/Gallery/a14.png" style="width:100%">
+                <img src="assets/Gallery/a15.png" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="assets/Gallery/a4.png" style="width:100%">
+                <img src="assets/Gallery/a5.jpg" style="width:100%">
+                <img src="assets/Gallery/a6.jpg" style="width:100%">
+                <img src="assets/Gallery/a16.png" style="width:100%">
+                <img src="assets/Gallery/a17.png" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="assets/Gallery/a7.jpg" style="width:100%">
+                <img src="assets/Gallery/a8.jpg" style="width:100%">
+                <img src="assets/Gallery/a9.jpg" style="width:100%">
+                <img src="assets/Gallery/a18.png" style="width:100%">
+                <img src="assets/Gallery/a19.png" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="assets/Gallery/a10.jpg" style="width:100%">
+                <img src="assets/Gallery/a11.jpg" style="width:100%">
+                <img src="assets/Gallery/a12.jpg" style="width:100%">
+                <img src="assets/Gallery/a13.jpg" style="width:100%">
+                <img src="assets/Gallery/a20.png" style="width:100%">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

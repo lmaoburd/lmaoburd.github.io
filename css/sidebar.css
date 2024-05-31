@@ -1,0 +1,78 @@
+
+body {
+    background-image: url('peakpx.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+}
+
+.header {
+    height: 77px; /* change height of header*/
+    background-color: #5B5B9A;
+    color: white; /* change color of text in header(including icons)*/
+}
+
+.headerTitle {
+    opacity: 0;
+    font-size: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 33%; /* <- Use to adjust title in header */
+    top: -4%;
+    font-family: "Lucida Console", "Courier New", monospace;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.9;
+    }
+}
+
+.sidenav {
+    height: 100%;
+    width: 5%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #35355A;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav:hover{
+    width:15%;
+}
+
+    .sidenav a {
+        padding: 15px 8px 8px 75px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav i { /*DO NOT FUCK THIS*/
+        position: fixed;
+        padding: 15px 8px 8px 20px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: inline-block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #858585;
+    }
+
+
