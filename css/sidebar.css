@@ -48,8 +48,17 @@ body {
     transition: 0.5s;
     padding-top: 60px;
 }
-.sidenav:hover{
+
+    .sidenav a {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+.sidenav:hover {
     width:15%;
+}
+
+.sidenav:hover a {
+    opacity: 1;
 }
 
     .sidenav a {
